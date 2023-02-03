@@ -1,2 +1,3 @@
 Filter for SVG elements to covert them into another color
 https://codepen.io/sosuke/pen/Pjoqqp
+//Note: if the SVG isn´t black use the brightness(0) saturate(100%) on the beggining of the filter to make it work
