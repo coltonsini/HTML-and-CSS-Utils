@@ -6,12 +6,11 @@ This script works to get your animations to work on scroll and repeatedly.
 const animatedElements = document.querySelectorAll('.animate__animated');
     const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
+        const animationName = entry.target.dataset.animation;
         if (entry.isIntersecting) {
-        const animationName = entry.target.dataset.animation;
-        entry.target.classList.add(animationName);
+        entry.target.classList.add(animationName, 'animated');
         } else {
-        const animationName = entry.target.dataset.animation;
-        entry.target.classList.remove(animationName);
+        entry.target.classList.remove(animationName, 'animated');
         }
     });
     });
