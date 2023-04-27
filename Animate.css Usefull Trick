@@ -1,0 +1,24 @@
+To import the library for your animations your should use 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+This script works to get your animations to work on scroll and to work repetealy.
+
+const animatedElements = document.querySelectorAll('.animate__animated');
+    const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        const animationName = entry.target.dataset.animation;
+        entry.target.classList.add(animationName);
+        } else {
+        const animationName = entry.target.dataset.animation;
+        entry.target.classList.remove(animationName);
+        }
+    });
+    });
+    animatedElements.forEach(element => {
+    observer.observe(element);
+    });
+    
+then you put on your tag a class with the name "animate_animated" and use the folowwing to add your desired animation data-animation="animate__rotateInDownLeft">
+    
+link to the library https://animate.style
