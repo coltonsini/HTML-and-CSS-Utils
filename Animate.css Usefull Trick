@@ -20,21 +20,32 @@ const animatedElements = document.querySelectorAll('.animate__animated');
     
 //Another way to do it 
 
-    const animatedElements = document.querySelectorAll('.animate__animated');
+const animatedElements = document.querySelectorAll('.animate__animated');
 
-    window.addEventListener('scroll', () => {
-      animatedElements.forEach(element => {
-        const animationName = element.dataset.animation;
-        const elementPosition = element.getBoundingClientRect().top;
-        const windowHeight = window.innerHeight;
-    
-        if (elementPosition < windowHeight) {
-          element.classList.add(animationName, 'animated');
-        } else {
-          element.classList.remove(animationName, 'animated');
-        }
-      });
-    });
+animatedElements.forEach(element => {
+  const animationName = element.dataset.animation;
+  const elementPosition = element.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (elementPosition < windowHeight) {
+    element.classList.add(animationName, 'animated');
+  }
+});
+
+window.addEventListener('scroll', () => {
+  animatedElements.forEach(element => {
+    const animationName = element.dataset.animation;
+    const elementPosition = element.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (elementPosition < windowHeight) {
+      element.classList.add(animationName, 'animated');
+    } else {
+      element.classList.remove(animationName, 'animated');
+    }
+  });
+});
+
     
 then you put on your tag a class with the name "animate__animated" and use the following to add your desired animation data-animation="animate__rotateInDownLeft">
     
