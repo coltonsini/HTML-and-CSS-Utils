@@ -6,14 +6,14 @@ This is a list of several tricks found while making new websites for some specif
 
 I found this useful to create an animation over the color of the underline line of your text element, the `transition` Property is set to `.3s` but you can use any timing that works for your project. 
 
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+*HTML example:*
 
 ```html
 <p class="object">
     Lorem Ipsum
 </p>
 ```
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+*CSS example:*
 
 ```css
 .object{
