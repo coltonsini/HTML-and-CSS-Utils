@@ -56,6 +56,6 @@ window.addEventListener('scroll', () => {
 });
 ```
     
-then you put on your tag a class with the name "animate__animated" and use the following to add your desired animation data-animation="animate__rotateInDownLeft">
+then you put on your tag a class with the name `animate__animated` and use the following to add your desired animation `data-animation="animate__rotateInDownLeft"`
     
-link to the library https://animate.style
+link to the library (https://animate.style)
