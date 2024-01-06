@@ -1,5 +1,12 @@
-/* Text decoration animation */
+# CSS Tricks 
 
+This is a list of several tricks found while making new websites for some specific requirements.
+
+## Text decoration animation on Hover
+
+I found this useful to create an animation over the color of the underline line of your text element, the `transition` element is set to `.3s` but you can use any timing that works for your project. 
+
+```css
 .object{
     text-decoration: underline;
     text-decoration-color: transparent;
@@ -13,3 +20,4 @@
     -webkit-text-decoration-color: #FFFFFF;
     -moz-text-decoration-color: #FFFFFF;
 }
+```
