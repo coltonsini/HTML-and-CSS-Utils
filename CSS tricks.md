@@ -4,7 +4,7 @@ This is a list of several tricks found while making new websites for some specif
 
 ## Text decoration animation on Hover
 
-I found this useful to create an animation over the color of the underline line of your text element, the `transition` element is set to `.3s` but you can use any timing that works for your project. 
+I found this useful to create an animation over the color of the underline line of your text element, the `transition` Property is set to `.3s` but you can use any timing that works for your project. 
 
 ```css
 .object{
