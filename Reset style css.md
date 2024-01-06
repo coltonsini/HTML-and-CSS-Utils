@@ -1,3 +1,10 @@
+# Style Reset CSS
+
+## Useful reset style for your website CSS.
+
+This is a great style reset whether you are creating a new website or doing any project.
+
+```css
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -33,3 +40,4 @@ p, h1, h2, h3, h4, h5, h6 {
 #root, #__next {
   isolation: isolate;
 }
+```
