@@ -90,3 +90,42 @@ This trick works to get an SVG element to covert them into another color once yo
 > [!IMPORTANT]
 > Code taken from: https://codepen.io/sosuke/pen/Pjoqqp
 > - Remember that you have to visit the website and put your desired color.
+
+## Input range selector styling
+
+This script works to get to show the value of the script on an specific span using the `#value` for the `id` of the span or any label and `#slider` for the `slider id` here's an example bellow 
+
+*HTML example:*
+
+```html
+<span> Grade, over: <strong><output id="value"></output> g/t</strong></span>
+<input id="slider" type="range" min="0" max="100" value="31" />
+```
+
+*Javascript example:*
+
+```javascript
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const value = document.querySelector("#value");
+    const input = document.querySelector("#slider");
+    value.textContent = input.value;
+    input.addEventListener("input", (event) => {
+        value.textContent = event.target.value;
+    });
+});
+</script>
+```
+
+> 💡 **Feature Note: Important Information**
+>
+> The recommended styling is inside the links found below to get to the different websites used, this works mainly to get the span to show the value of the range selector input.
+
+> [!IMPORTANT]
+> Code taken from:
+> - https://www.cssportal.com/style-input-range/
+> - https://range-input-css.netlify.app
+> - https://nikitahl.com/style-range-input-css
+
+
+
