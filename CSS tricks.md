@@ -52,3 +52,9 @@ This is an inline style to get the embed maps or embed content to mantain a 16/9
 
 > [!IMPORTANT]
 > Code taken from: https://help.viostream.com/frequently-asked-questions/how-do-i-make-an-iframe-embed-responsive/
+
+## Percent convertion for REM TO PX TO %
+
+This website will allow you to convert your font between several measures used in website development.
+
+https://codebeautify.org/percent-to-rem-converter
