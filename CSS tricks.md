@@ -86,7 +86,7 @@ This trick works to get an SVG element to covert them into another color once yo
 > [!NOTE]
 > If the SVG isn't black, use the `brightness(0)` and `saturate(100%)` properties at the beginning of the filter CSS to make it work.
 > - Link: https://stackoverflow.com/questions/22252472/how-can-i-change-the-color-of-an-svg-element
-> - Remember that you have to visit the website and put your desired color.
 
 > [!IMPORTANT]
 > Code taken from: https://codepen.io/sosuke/pen/Pjoqqp
+> - Remember that you have to visit the website and put your desired color.
