@@ -105,7 +105,6 @@ This script works to get to show the value of the script on an specific span usi
 *Javascript example:*
 
 ```javascript
-<script>
 document.addEventListener("DOMContentLoaded", function() {
     const value = document.querySelector("#value");
     const input = document.querySelector("#slider");
@@ -114,7 +113,6 @@ document.addEventListener("DOMContentLoaded", function() {
         value.textContent = event.target.value;
     });
 });
-</script>
 ```
 
 > 💡 **Feature Note: Important Information**
