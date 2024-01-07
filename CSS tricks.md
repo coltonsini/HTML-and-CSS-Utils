@@ -57,4 +57,36 @@ This is an inline style to get the embed maps or embed content to mantain a 16/9
 
 This website will allow you to convert your font between several measures used in website development.
 
-https://codebeautify.org/percent-to-rem-converter
+> [!NOTE]
+> Link to the website content: https://codebeautify.org/percent-to-rem-converter
+
+## Filter for SVG elements to change the main fill color.
+
+This trick works to get an SVG element to covert them into another color once your using a `<img>` tag instead of the regular `<svg>` tag.
+
+*HTML example:*
+
+```html
+<img alt="" src="link to your SVG" class="svg-image">
+```
+
+*CSS example:*
+
+```css
+/* This example get the element to change to the HEX color #00a4d6 */
+.svg-image{
+    filter: invert(38%) sepia(96%) saturate(1580%) hue-rotate(165deg) brightness(100%) contrast(101%);
+}
+```
+
+> 💡 **Feature Note: Important Information**
+>
+> This is a trick that works but is recommended to avoid using `<svg>` elements with the `<img>` tag since you can style an `<svg>` tag easily with the `fill` or `stroke` properties.
+
+> [!NOTE]
+> If the SVG isn't black, use the `brightness(0)` and `saturate(100%)` properties at the beginning of the filter CSS to make it work.
+> - Link: https://stackoverflow.com/questions/22252472/how-can-i-change-the-color-of-an-svg-element
+> - Remember that you have to visit the website and put your desired color.
+
+> [!IMPORTANT]
+> Code taken from: https://codepen.io/sosuke/pen/Pjoqqp
