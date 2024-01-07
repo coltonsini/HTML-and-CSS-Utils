@@ -33,3 +33,23 @@ I found this useful to create custom CSS borders for your custom HTML elements.
 
 > [!NOTE]
 > Link to the website: https://dev.to/lissy93/super-useful-css-resources-1ba3
+
+## Get NavIcon image
+
+This script will help you to get the NavIcon image of any website that you are looking for, you just need to add your link and use it over the website console.
+
+```javascript
+if (!empty($comment->comment_author_url)) {
+  $url = preg_replace('/^https?:\\/\\//', '', $comment->comment_author_url);
+  if ($url != "") {
+    $imgurl = "https://www.google.com/s2/favicons?domain=" . $url;
+    echo '![](' . $imgurl . ')';
+  }
+}
+```
+
+> [!IMPORTANT]
+> Remeber to put your desired URL right next to the `domain=` code line.
+
+> [!NOTE]
+> Link to the website: https://www.labnol.org/internet/get-favicon-image-of-websites-with-google/4404/
