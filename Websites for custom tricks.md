@@ -49,7 +49,7 @@ if (!empty($comment->comment_author_url)) {
 ```
 
 > [!IMPORTANT]
-> Remeber to put your desired URL right next to the `domain=` code line.
+> Remember to put your desired URL right next to the `domain=` code line.
 
 > [!NOTE]
 > Link to the website: https://www.labnol.org/internet/get-favicon-image-of-websites-with-google/4404/
